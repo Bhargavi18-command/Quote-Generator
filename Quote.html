@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Quote Generator</title>
+        <style>
+            body{
+                font-family: Arial,  sans-serif;
+                text-align: center;
+                margin: 50px;
+                color: blue;
+                
+              
+            }
+            .container{
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0,0,0,0,1);
+                max-width: 10px;
+                margin: auto;
+            }
+            button{
+                padding: 10px 20px;
+                margin-top: 20px;
+                font-size: 16px;
+                cursor: pointer;
+                border: 5px solid black;
+                background: #008cba;
+                color:aliceblue
+               
+            }
+            button:hover{
+                background: #60d4ec;
+            }
+        .author{
+            font-size: 20px;
+            font-style: italic;
+            color: #555;
+        }
+        .quote{
+            margin: 20px 0;
+            font-size: 25px;
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <h1>Quote Generator</h1>
+    
+        <p class="quote" id="quote">click the button to generate a quote</p>
+<p class="author" id="author"></p>
+<button onclick="generateQuote()">New Quote</button>
+    </div>
+    <script>
+        const quotes = [
+            { text: "The best way to predict the future is to create it.", author: "Peter Drucker" },
+            { text: "Life is 10% what happens to us and 90% how we react to it.", author: "Charles R. Swindoll" },
+            { text: "Success is not final, failure is not fatal: it is the courage to continue that counts.", author: "Winston Churchill" },
+            { text: "The only limit to our realization of tomorrow is our doubts of today.", author: "Franklin D. Roosevelt" },
+            { text: "Believe you can and you're halfway there.", author: "Theodore Roosevelt" }
+        ];
+
+        function generateQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            document.getElementById("quote").textContent = quotes[randomIndex].text;
+            document.getElementById("author").textContent = quotes[randomIndex].author;
+        }
+    </script>
+    
+    </body>
+</html>
