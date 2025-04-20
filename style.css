@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+    margin: 50px;
+    color: rgb(168, 246, 179);
+    font-size: 50px;
+    background-color: #022b34;
+  }
+  .container {
+    background:  #022b34;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0, 1);
+    margin: auto;
+  }
+  button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    border: 5px solid black;
+    background: #008cba;
+    color: aliceblue;
+  }
+  button:hover {
+    background: #60d4ec;
+  }
+  .author {
+    font-size: 20px;
+    font-style: italic;
+    color: #a5ed97;
+  }
+  .quote {
+    margin: 20px 0;
+    font-size: 30px;
+    color:aqua
+  }
